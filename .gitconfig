@@ -1,0 +1,12 @@
+[user]
+	name = Takashi Takebayashi
+	email = changesworlds@gmail.com
+[push]
+	default = current
+[alias]
+	co = checkout
+	ci = commit
+	st = status
+	br = branch
+	fe = fetch
+	me = merge
