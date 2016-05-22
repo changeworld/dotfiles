@@ -4,9 +4,10 @@
 [push]
 	default = current
 [alias]
+	br = branch
 	co = checkout
 	ci = commit
-	st = status
-	br = branch
+	cia = commit -a
 	fe = fetch
 	me = merge
+	st = status
