@@ -11,3 +11,5 @@
 	fe = fetch
 	me = merge
 	st = status
+[fetch]
+	prune = true
