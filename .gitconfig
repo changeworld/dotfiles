@@ -4,7 +4,7 @@
 [push]
 	default = current
 [alias]
-	br = branch
+	br = branch -a
 	ci = commit
 	cia = commit -a
 	co = checkout
