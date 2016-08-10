@@ -5,9 +5,9 @@
 	default = current
 [alias]
 	br = branch
-	co = checkout
 	ci = commit
 	cia = commit -a
+	co = checkout
 	fe = fetch
 	me = merge
 	st = status
