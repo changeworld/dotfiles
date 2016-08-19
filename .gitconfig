@@ -5,7 +5,8 @@
 	default = current
 [alias]
     alias = !git config --list | grep 'alias\\.' | sed 's/alias\\.\\([^=]*\\)=\\(.*\\)/\\1\\\t => \\2/' | sort
-	br = branch -a
+	br = branch
+	bra = branch -a
 	ci = commit
 	cia = commit -a
 	co = checkout
