@@ -10,6 +10,7 @@
 	ci = commit
 	cia = commit -a
 	co = checkout
+    del = !git branch --merged master | grep -vE '^\\*|master$|develop$' | xargs -I % git branch -d %
 	di = diff
 	fe = fetch
 	me = merge
