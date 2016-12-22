@@ -4,13 +4,13 @@
 [push]
 	default = current
 [alias]
-    alias = !git config --list | grep 'alias\\.' | sed 's/alias\\.\\([^=]*\\)=\\(.*\\)/\\1\\\t => \\2/' | sort
+	alias = !git config --list | grep 'alias\\.' | sed 's/alias\\.\\([^=]*\\)=\\(.*\\)/\\1\\\t => \\2/' | sort
 	br = branch
 	bra = branch -a
 	ci = commit
 	cia = commit -a
 	co = checkout
-    del = !git branch --merged master | grep -vE '^\\*|master$|develop$' | xargs -I % git branch -d %
+	del = !git branch --merged master | grep -vE '^\\*|master$|develop$' | xargs -I % git branch -d %
 	di = diff
 	fe = fetch
 	me = merge
