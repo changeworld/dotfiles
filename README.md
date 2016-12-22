@@ -4,4 +4,4 @@ This is my dotfiles
 
 ## Installation
 
-    git clone https://github.com/mtsmfm/dotfiles
+    git clone https://github.com/changeworld/dotfiles
