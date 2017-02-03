@@ -14,6 +14,8 @@
 	lo = log
 	me = merge
 	st = status
+[credential]
+	helper = osxkeychain
 [fetch]
 	prune = true
 [push]
