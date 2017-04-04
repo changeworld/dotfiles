@@ -7,9 +7,8 @@
 	bra   = branch -a
 	brd   = branch -d
 	brdf  = branch -D
-	ci    = commit
-	cia   = commit -a
-	cm    = commit -m
+	ci    = commit -m
+	cia   = commit -a -m
 	co    = checkout
 	cob   = checkout -b
 	del   = !git branch --merged master | grep -vE '^\\*|master$|develop$' | xargs -I % git branch -d %
@@ -17,6 +16,8 @@
 	fe    = fetch
 	lo    = log
 	me    = merge
+	p     = push
+	pf    = push -f
 	re    = reset
 	reh   = reset HEAD
 	st    = status
