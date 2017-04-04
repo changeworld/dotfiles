@@ -9,6 +9,7 @@
 	brdf  = branch -D
 	ci    = commit
 	cia   = commit -a
+	cm    = commit -m
 	co    = checkout
 	cob   = checkout -b
 	del   = !git branch --merged master | grep -vE '^\\*|master$|develop$' | xargs -I % git branch -d %
