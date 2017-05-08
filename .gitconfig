@@ -12,9 +12,10 @@
 	co    = checkout
 	cob   = checkout -b
 	del   = !git branch --merged master | grep -vE '^\\*|master$|develop$' | xargs -I % git branch -d %
-	di    = diff
-	fe    = fetch
-	lo    = log
+	d     = diff
+	f     = fetch
+	l     = log --pretty=fuller
+	lp    = log -p
 	me    = merge
 	p     = push
 	pf    = push -f
