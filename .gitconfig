@@ -3,24 +3,26 @@
 	email = changesworlds@gmail.com
 [alias]
 	alias = !git config --list | grep 'alias\\.' | sed 's/alias\\.\\([^=]*\\)=\\(.*\\)/\\1\\\t => \\2/' | sort
-	br    = branch -vv
-	bra   = branch -a
-	brd   = branch -d
-	brdf  = branch -D
+	b     = branch -vv
+	ba    = branch -a
+	bd    = branch -d
+	bdf   = branch -D
 	ci    = commit -m
 	cia   = commit -a -m
 	co    = checkout
 	cob   = checkout -b
-	del   = !git branch --merged master | grep -vE '^\\*|master$|develop$' | xargs -I % git branch -d %
 	d     = diff
+	del   = !git branch --merged master | grep -vE '^\\*|master$|develop$' | xargs -I % git branch -d %
+	e     = !"f() { git co master; git pull origin master; git del; }; f"
 	f     = fetch
 	l     = log --pretty=fuller
 	lp    = log -p
 	me    = merge
-	p     = push
-	pf    = push -f
-	re    = reset
-	reh   = reset HEAD
+	pu    = push
+	puf   = push -f
+	pl    = pull
+	r     = reset
+	rh    = reset HEAD
 	st    = status
 [credential]
 	helper = osxkeychain
