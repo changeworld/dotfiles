@@ -12,8 +12,8 @@
 	co    = checkout
 	cob   = checkout -b
 	d     = diff
-	del   = !git branch --merged master | grep -vE '^\\*|master$|develop$' | xargs -I % git branch -d %
-	e     = !"f() { git co master; git pull origin master; git del; }; f"
+	del   = !git branch --merged main | grep -vE '^\\*|main$|develop$' | xargs -I % git branch -d %
+	e     = !"f() { git co main; git pull origin main; git del; }; f"
 	f     = fetch
 	l     = log --pretty=fuller
 	lp    = log -p
